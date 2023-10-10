@@ -17,15 +17,6 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('db'){
-      agent{
-        docker{image 'mysql:latest'}
-      
-      steps{
-        sh 'create database db1'
-      }
-      
-      
-    }
-  }
+   
 }
+
